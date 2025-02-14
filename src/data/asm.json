@@ -1,0 +1,20 @@
+{
+    "name": "Örnek ASM",
+    "address": "Atatürk Mah. No:10, İstanbul",
+    "phone": "0212 123 45 67",
+    "email": "iletisim@ornekasm.com",
+    "workingHours": "08:00 - 17:00",
+    "services": [
+      "Aşılama hizmetleri",
+      "Sağlık taramaları",
+      "Laboratuvar hizmetleri"
+    ],
+    "announcements": [
+      {
+        "id": 1,
+        "title": "Grip Aşısı Kampanyası",
+        "description": "Grip aşıları ASM'mizde ücretsiz olarak yapılmaktadır."
+      }
+    ]
+  }
+  

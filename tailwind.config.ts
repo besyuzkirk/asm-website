@@ -1,18 +1,21 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
-export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+const config: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: '#E30613', // Sağlık Bakanlığı kırmızısı
+        secondary: '#027B59', // Yeşil vurgular
+        background: '#FFFFFF', // Beyaz arka plan
+        gray: '#D9D9D9', // Çizgi ve ayırıcı renk
+      },
+      fontFamily: {
+        sans: ['Arial', 'Helvetica', 'sans-serif'], // Kurumsal font
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
