@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const doctor = {
@@ -21,7 +22,7 @@ export default function Team() {
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white shadow-lg rounded-lg p-6 gap-6">
         <div className="flex justify-center">
-          <img
+          <Image
             src={doctor.photo}
             alt={doctor.name}
             className="w-72 h-72 object-cover rounded-lg shadow-md"

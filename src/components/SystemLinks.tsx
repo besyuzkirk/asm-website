@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const systems = [
@@ -52,7 +53,7 @@ export default function SystemsLinks() {
             >
               {/* İkon */}
               <div className="w-40 h-40 mb-6">
-                <img
+                <Image
                   src={system.icon}
                   alt={system.name}
                   className="w-full h-full object-contain"

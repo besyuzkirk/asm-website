@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="bg-white border-b border-red-600 py-6 px-6">
       <div className="flex justify-between items-center">
         {/* Logo ve Yazılar */}
         <div className="flex items-center gap-4">
-          <img
+          <Image
             src="/logo.png"
             alt="Sağlık Bakanlığı Logosu"
             className="w-16 h-16"
