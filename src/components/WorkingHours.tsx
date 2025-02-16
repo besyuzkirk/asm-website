@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 export default function WorkingHours() {
   return (
@@ -26,7 +26,7 @@ export default function WorkingHours() {
           </thead>
           <tbody>
             <tr><td className="border px-4 py-2">08:00 - 12:00</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Gezici Sağlık (Ayın Her Haftası)</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Gezici Sağlık (Ayın Her Haftası)</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td></tr>
-            <tr><td className="border px-4 py-2">12:00 - 13:00</td><td colSpan="5" className="border px-4 py-2 text-center">Öğle Tatili</td></tr>
+            <tr><td className="border px-4 py-2">12:00 - 13:00</td><td colSpan={5} className="border px-4 py-2 text-center">Öğle Tatili</td></tr>
             <tr><td className="border px-4 py-2">13:00 - 16:00</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td></tr>
             <tr><td className="border px-4 py-2">16:00 - 17:00</td><td className="border px-4 py-2">Ev Ziyareti</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Aile Hekimliği Hizmetleri</td><td className="border px-4 py-2">Ev Ziyareti</td></tr>
           </tbody>

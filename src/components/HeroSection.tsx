@@ -34,7 +34,16 @@ const slides = [
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [open, setOpen] = useState(false);
-  const [selectedSlide, setSelectedSlide] = useState(null);
+  type Slide = {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    buttonText: string;
+    blogContent: string;
+  };
+  
+  const [selectedSlide, setSelectedSlide] = useState<Slide | null>(null);
 
   const handlePrev = () => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   const handleNext = () => setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
